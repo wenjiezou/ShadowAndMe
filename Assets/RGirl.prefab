@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4855229305774310}
   - component: {fileID: 212471435511182644}
   - component: {fileID: 95610382597685796}
-  - component: {fileID: 50367551706332192}
-  - component: {fileID: 70971459526508736}
   - component: {fileID: 114331256453087886}
+  - component: {fileID: 114935198855246914}
+  - component: {fileID: 50817738561083664}
   m_Layer: 0
   m_Name: RGirl
   m_TagString: Untagged
@@ -44,7 +44,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50367551706332192
+--- !u!50 &50817738561083664
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -64,21 +64,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &70971459526508736
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1771480283201584}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0648607, y: 0.7918956}
-  m_Size: {x: 0.3820417, y: 1.9113917}
-  m_Direction: 0
 --- !u!95 &95610382597685796
 Animator:
   serializedVersion: 3
@@ -109,6 +94,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Shd: {fileID: 4222144638031770, guid: 2ea44c9a783392748894261d6dbb258c, type: 2}
+--- !u!114 &114935198855246914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1771480283201584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bcf2a9c97a6d6247bcffcf9f78e6e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minGroundNormalY: 0.65
+  gravityModifier: 1
+  maxSpeed: 7
+  jumpTakeOffSpeed: 7
 --- !u!212 &212471435511182644
 SpriteRenderer:
   m_ObjectHideFlags: 1
